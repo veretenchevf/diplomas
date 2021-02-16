@@ -1,0 +1,290 @@
+.header {  
+    background-color: $header_footer_bgc;
+    background-image:  url(../images/football_header_bgi.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;    
+    padding: 0 15px;
+}
+
+.header-block {
+    @include center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    &__top {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        color: $main_white;
+        padding-top: 58px;
+        padding-bottom: 300px;
+    }
+    &__top-text {
+        @extend %header-font;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 34.49px;
+        text-align: left;
+        text-transform: uppercase;
+        letter-spacing: 0.7px;
+    }
+    &__center-text {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        @extend %header-font;
+        font-size: 90px;
+        font-weight: 700;
+        line-height: 92px;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 4.96px;
+    }
+    &__header-heading {
+        display: flex;
+        flex-direction: column;
+    }
+    &__be {
+        align-self: flex-start;
+        position: relative;
+        z-index: 1;
+    }
+    &__play {
+        align-self: flex-end;  
+    }
+    &__nav {
+        align-self: flex-end;
+        padding-bottom: 172px;
+    }
+    &__sport-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        color: #9071ea;
+        font-size: 14px;
+        font-weight: 300;
+        letter-spacing: normal;
+        line-height: 34.49px;
+        text-align: left;
+        text-transform: uppercase;
+        letter-spacing: 0.7px;
+    }
+    &__sport-link {
+        text-decoration: none;
+    }
+    &__dwnld {
+        align-self: center;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 110px;   
+    }
+    &__link {
+        text-decoration: none;
+        color: #ffffff;
+        font-weight: 300;
+        line-height: 14px;
+        text-align: left;
+        text-transform: uppercase;
+        letter-spacing: 0.7px;
+        min-width: 311px;
+        height: 77px;
+        box-shadow: 0 16px 24px #0a0e34;
+        background-color: #5e42b0;
+        border-radius: 50px;
+        margin-left: 50px;
+        padding-left: 105px;
+        padding-top: 26px;
+        position: relative;
+        &:first-child {
+            margin-left: 0px;
+        }
+        &--store {
+            color: #ffffff;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 15px;
+            text-align: left;
+            text-transform: uppercase;
+            letter-spacing: 0.7px;
+        }
+    }
+    .header-block__center-text::before{
+        content: url(../icons/prpl_line.png);
+        position: absolute;
+        top: -93px;
+        right: 57%;
+        z-index: 1;
+    }
+    .apple::before {
+        content: url(../icons/Icon_-_Apple.png);
+        position: absolute;
+        top: 20px;
+        left: 43px;
+    }
+    .google::before {
+        content: url(../icons/Icon_-_Google_Play.png);
+        position: absolute;
+        top: 20px;
+        left: 43px;
+    }
+    .link_nav {
+        padding-left: 53px;
+    }
+    .link_nav:first-child {
+        padding-left: 0px;
+    }
+
+    @media (max-width: 1549px) {
+        .header-block {
+            &__top {
+                padding-top: 53px;
+                padding-bottom: 190px;
+            }
+            &__center-text {
+                padding-left: 74px;
+                padding-bottom: 180px;
+                font-size: 64px;
+                line-height: 76px;
+                letter-spacing: 3.52px;
+            }
+            &__play {
+                text-align: left;
+                padding-left: 102px;
+                z-index: 1;
+            }
+            &__nav {
+                align-self: center;
+                padding-bottom: 104px;
+            }
+            &__sport-links  {
+                font-size: 16px;
+                color: #5e42b0;
+                font-weight: 600;
+            }
+            &__dwnld {
+                justify-content: center;  
+            }
+            &__link {
+                width: 311px;
+            } 
+        }
+        .apple {
+            margin-left: 0px;
+        }
+        .header-block__center-text::before{
+            top: -54px;
+            right: 36%;
+        }
+    }
+
+    @media (max-width: 767px) {
+        .header-block {
+            &__top {
+                align-self: center;
+                padding-bottom: 141px;
+            }
+            &__top-text {
+                display: none;
+            }
+            &__center-text {
+                font-size: 32px;
+                line-height: 32px;
+                letter-spacing: 1.76px;
+                margin-bottom: 113px;
+                padding-left: 0px;
+                margin-bottom: 0;
+                padding-bottom: 110px;
+            }
+        
+            &__play {
+                margin-top: 20px;  
+                z-index: 1;
+                text-align: left;
+                padding-left: 48px;
+                line-height: 42px;
+            }
+            &__nav {
+                order: 1;
+                align-self: center;
+                width: 100%;
+                padding-bottom: 7px;
+            }
+            &__sport-links  {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                color: #9071ea;
+                font-size: 12px;
+                font-weight: 300;
+                letter-spacing: normal;
+                line-height: 34.49px;
+                text-align: left;
+                text-transform: uppercase;
+                letter-spacing: 0.7px;
+            }
+            &__dwnld {
+                font-size: 8px;
+                justify-content: center;
+                padding-bottom: 33px;
+            }
+            &__link {
+                width: 23%;
+                min-width: 30%;
+                min-width: 142px;
+                height: 39px;
+                box-shadow: 0 16px 24px #0a0e34;
+                background-color: #5e42b0;
+                border-radius: 50px;
+                margin-left: 10px;
+                padding-left: 42px;
+                padding-top: 7px;
+                &--store {
+                    color: #ffffff;
+                    font-size: 8px;
+                    font-weight: 600;
+                    line-height: 14px;
+                    text-align: left;
+                    text-transform: uppercase;
+                    letter-spacing: 0.7px;
+                }
+            }
+        }
+        .apple {
+            margin-left: 0px;
+        }
+        .link_nav {
+            padding-left: 33px;
+        }
+        .apple::before {
+            content: url(../icons/Icon_-_Apple_s.png);
+            position: absolute;
+            top: 11px;
+            left: 20px;
+        }
+        .google::before {
+            content: url(../icons/Icon_-_Google_Play_S.png);
+            position: absolute;
+            top: 11px;
+            left: 20px;
+        }
+        .header-block__center-text::before{
+            content: url(../icons/prpl_line_s.png);
+            position: absolute;
+            top: -32px;
+            right: 50%;
+            z-index: 1;
+        }
+    }   
+    @media (max-width: 400px) {
+        .header-block__center-text::before{
+            content: url(../icons/prpl_line_s.png);
+            position: absolute;
+            top: -32px;
+            right: 30%;
+            z-index: 1;
+        }
+    }
+}

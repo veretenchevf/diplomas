@@ -1,0 +1,9 @@
+$header_footer_bgc: #0a0e34;
+$main_white: #ffffff;
+%center {
+   margin: 0 auto;
+}
+%header-font {
+    font-family: 'PNreg', sans-serif;
+    color: $main_white;
+}

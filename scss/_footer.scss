@@ -1,0 +1,257 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    background-image: url(../images/footer_bgi.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    &__main_icon {
+        width: 130px;
+        height: 137px;
+        margin-right: 36px;
+    }
+    &__main {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-top: 229px;
+        background-color: rgba($color:#0a0e34, $alpha: 0.9);
+        padding-bottom: 151px;
+    } 
+    &__bottom {
+        padding: 69px 15px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background-color: rgba($color:#0a0e34, $alpha: 0.96);
+    }
+    &__title {
+        position: relative;
+        color: #ffffff;
+        font-size: 90px;
+        font-weight: 700;
+        line-height: 85px;
+        text-transform: uppercase;
+        letter-spacing: 4.96px;
+        padding-top: 9px;
+        z-index: 1;
+        &::before {
+            content: url(../icons/prpl_line_footer.png);
+            position: absolute;
+            top: -94px;
+            left: 355px;
+            z-index: -1;
+        }
+        &::after {
+            content: url(../icons/prpl_line_footer_s.png);
+            position: absolute;
+            top: -23px;
+            left: 25px;
+            z-index: -1;
+        }
+    }
+    &__subtitle {
+        position: relative;
+        color: #a496ca;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 34.49px;
+        text-transform: uppercase;
+        z-index: 1;
+        padding-left: 4px;
+    }
+    &__container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 1810px;
+        &-text { 
+            color: #ffffff;
+            font-size: 20px;
+            font-weight: 400;
+            align-self: center;
+            text-decoration: none;
+        }
+    }
+    &__soc_links {
+        width: 145px;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+.footer-main-bottom {
+    background-color: rgba($color:#0a0e34, $alpha: 0.9);
+    padding-bottom: 197px;
+}
+.footer .header-block__link:first-child {
+    margin-left: 0px;
+}
+.footer .header-block__link {
+    padding-left: 110px;
+}
+.footer_dwnld {
+    &--google {
+        &::after{
+            content: url(../icons/Icon_-_Google_Play.png);
+            position: absolute;
+            top: 18px;
+            left: 61px;
+            z-index: 2;
+        }
+    }
+}
+.footer_dwnld::after {
+    content: url(../icons/Icon_-_Apple.png);
+    position: absolute;
+    top: 18px;
+    left: 61px;
+    z-index: 2;
+}
+
+@media (max-width:1549px) {
+    .footer {
+        &__main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 128px;
+            padding-bottom: 193px;
+        }
+        &__main_icon {
+            width: 130px;
+            height: 137px;
+            margin-bottom: 64px;
+            margin-right: 0px;
+        }
+        &__title {
+            font-size: 80px;
+            line-height: 80px;
+            margin-bottom: 13px;
+            &::before {
+                top: -81px;
+                left: 286px; 
+            }
+            &::after {
+                top: 2px;
+                left: 5px;   
+            }
+        }
+        &__container{
+            justify-content: center;
+        }
+        &__subtitle {  
+            padding-left: 10px;
+        }
+        &__icon_surface {
+            display: none;
+        }
+        &__container-text {
+            display: none;
+        }
+        &__bottom {
+            padding-top: 35px;
+            padding-bottom: 30px;
+        }
+    }
+    .footer-main-bottom {
+        padding-bottom: 129px;
+    }
+}
+
+@media (max-width:767px) {
+    .footer {
+        &__main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 97px;
+            padding-bottom: 70px;
+        }
+        &__main_icon {
+            width: 73px;
+            height: 78px;
+            margin-bottom: 44px;
+        }
+        &__title {
+            font-size: 34px;
+            line-height: 34px;
+            letter-spacing: 1.7px;
+            margin-bottom: 4px;
+            &::before {
+                content: url(../icons/prpl_line_footer_320.png);
+                top: 0px;
+                left: 0px; 
+            }
+            &::after {
+                content: url(../icons/prpl_line_footer_320_l.png);
+                top: -24px;
+                left: 130px;   
+            }
+        }
+        &__container{
+            justify-content: center;
+        }
+        &__subtitle {  
+            font-size: 15px;
+            line-height: 15px;
+            letter-spacing: 0.75px;
+            padding-left: 1px;
+        }
+        &__icon_surface {
+            display: none;
+        }
+        &__container-text {
+            display: none;
+        }
+        &__bottom {
+            padding-top: 19px;
+            padding-bottom: 13px;
+        }
+        &__soc_links {
+            width: 124px;
+        }
+    }
+    .footer .header-block__link {
+        min-width: 142px;
+        width: 142px;
+        height: 39px;
+        font-size: 8px;
+        font-weight: 300;
+        letter-spacing: 0.4px;
+        padding-left: 45px;
+        padding-top: 11px;
+        line-height: 8px;
+        &--store {
+            font-size: 8px;
+            font-weight: 600;
+            letter-spacing: 0.4px;
+            line-height: 9px;
+        } 
+    }
+    .footer-main-bottom {
+        padding-bottom: 127px;
+    }
+    .footer_dwnld--google {
+        margin-left: 8px;
+    }
+    .footer_dwnld {
+        &--google {
+            &::after{
+                content: url(../icons/Icon_-_Google_Play_s.png);
+                top: 10px;
+                left: 20px;
+            }
+        }
+    }
+    .footer_dwnld::after {
+        content: url(../icons/Icon_-_Apple_s.png);
+        top: 9px;
+        left: 20px;
+    }
+    .footer__soc_link {
+        height: 18px;
+    }
+}

@@ -1,0 +1,23 @@
+@import 'fonts';
+@import 'reset';
+@import 'mixins';
+@import 'vars';
+html, body {
+    font-family: 'PNreg', sans-serif;
+    min-width: 320px;
+    overflow-x: hidden;
+}
+* {
+    box-sizing: border-box;
+}
+@import 'header';
+@import 'a-and-p';
+@import 'card';
+@import 'footer';
+
+
+
+
+
+
+

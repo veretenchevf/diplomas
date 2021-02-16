@@ -1,0 +1,318 @@
+.a-and-p {
+    color: #000000;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+    letter-spacing: 1px;
+    &__bgc01 {
+        background-color:#ffffff;
+    }
+    &__bgc02 {
+        background-color:#f5f4fa; 
+    }
+    &__bgc03 {
+        background-color:#5e42b0;
+        &--bboy {
+            background-color: #0a0e34;
+        }
+    }
+    &_center {
+        @include center;
+        max-width: 1411px;
+        margin-left: 50%;
+        &--bboy {
+            @include center;
+            max-width: 1270px;
+        }
+    }
+    &__h2 {
+        position: relative;
+        color: #e7e7e7;
+        font-size: 90px;
+        font-weight: 700;
+        line-height: 90px;
+        text-transform: uppercase;
+        padding-top: 101px;
+        padding-bottom: 11px;
+    }
+    &__h2::before {
+        content: url(../icons/purple_line_footballboy.png);
+        position: absolute;
+        top: 65px;
+        left: -704px;  
+    }
+    .a-and-p__h2--bboy {
+        position: relative;
+        color: #e7e7e7;
+        font-size: 90px;
+        font-weight: 700;
+        line-height: 90px;
+        text-transform: uppercase;
+        padding-top: 101px;
+        padding-bottom: 11px;
+    }
+    .a-and-p__h2--bboy::before {
+        content: url(../icons/prpl_line_bboy.png);
+        position: absolute;
+        top: 41px;
+        left: 647px; 
+    }
+    .fboy {
+        position: absolute;
+        top: 41px;
+        left: -704px;  
+    }
+    .bboy {
+        position: absolute;
+        top: -28px;
+        left: 465px;    
+    }
+    &__h3 {
+        display: flex;
+        color: #c1c1c1;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 34.49px;
+        text-transform: uppercase;
+        letter-spacing: 1.8px;
+        padding-bottom: 20px;
+        padding-top: 64px;
+        &--bboy {
+            padding-bottom: 30px;
+        }
+    }
+    &__text {
+        max-width: 750px;
+        padding-bottom: 56px;
+        &--bboy {
+            max-width: 570px;
+            width: 70%;
+            padding-bottom: 66px;
+        }
+    }
+    .number {
+        display: block;
+        color: #0a0e34;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 24px;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 0.9px;
+        margin-right: 9px;
+    }
+    .p-fb-num {
+        color: #0a0e34;
+        &--bboy {
+            color: #9173e6;
+        } 
+    }
+    .number::after {
+        content: '';
+        display: block;
+        height: 5px;
+        border-radius: 2px;
+        background-color: #5e42b0;
+    }  
+    .p-fb-num::after {
+        background-color: #efefef;
+    }   
+    .p-fb-num--bboy::after {
+        background-color: #efefef;
+    }   
+    .p-fb-text {
+        color: #ffffff;
+        padding-bottom: 100px;
+        &--bboy {
+            color: #ffffff;
+            padding-bottom: 90px;
+        }
+    }
+    .p-fb--h3 {
+        padding-top: 88px;
+        &--bboy {
+            padding-top: 96px;
+        }
+    }
+    .rev_320 {
+        display: none;
+    }
+
+    @media (max-width:1549px) {
+        .a-and-p {
+            font-size: 18px; 
+            &_center {
+                @include center;
+                max-width: 1411px;
+                margin-left: 35%;
+                &--bboy {
+                    @include center;
+                    margin-right: 50%;
+                    padding-left: 5% ;
+                    width: 90%;
+                    max-width: 750px;
+                }
+            }
+            &__h2 {
+                padding-top: 71px;
+                padding-bottom: 11px;
+            }
+            &__h2::before {
+                content: url(../icons/purple_line_footballboy_768.png);
+                position: absolute;
+                top: 65px;
+                left: -334px;  
+            }
+            &__h3 {
+                padding-top: 30px;
+            }
+            &__text {
+                padding-bottom: 30px;
+                padding-right: 34px;
+                letter-spacing: 0.9px;
+            }
+            .p-fb-text {
+                padding-bottom: 30px;
+                letter-spacing: 0.9px;
+            }
+        }
+        .fboy {
+            height: 670px;
+            position: absolute;
+            top: 94px;
+            left: -434px;
+        }
+        .bboy {
+            max-height: 670px;
+            position: absolute;
+            top: 34px;
+            left: 330px; 
+        }
+        .a-and-p__h2--bboy::before {
+            content: url(../icons/prpl_line_bboy_768.png);
+            position: absolute;
+            top: 124px;
+            left: 529px; 
+        }
+    }
+    
+    @media (max-width:767px) {
+        .rev {
+            display: none;
+        }
+        .rev_320 {
+            position: relative;
+            display: flex;  
+            flex-direction: column;
+            align-items: center;
+        }
+        .p-fb-text {
+            color: #000000;
+            padding-bottom: 100px;
+            &--bboy {
+                color: #000000;
+                padding-bottom: 90px;
+            }
+        }
+        .p-fb-num::after {
+            background-color: #5e42b0;
+        } 
+        .a-and-p {
+            display: flex;
+            &_center {
+                @include center;
+                max-width: 768px;
+                width: 90%;
+                padding-right: 0px;
+                &--bboy {
+                    @include center;
+                    max-width: 768px;
+                }
+            }
+            &__bgc03 {
+                background-color:#f5f4f9;
+                &--bboy {
+                    background-color: #f5f4f9;
+                }
+            }
+            &__h2 {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                position: relative;
+                font-size: 50px;
+                line-height: 60px;
+                padding-top: 20px;
+                padding-bottom: 245px;
+            }  
+            &__h2::before {
+                display: none;
+                content: url(../icons/purple_line_footballboy_768.png);
+                position: absolute;
+                top: 65px;
+                left: -334px;  
+            }
+            &__h3 {
+                font-size: 28px;
+                padding-top: 78px;
+                &--bboy {
+                    padding-bottom: 30px;
+                }
+            }
+            &__text {
+                font-size: 15px;
+                max-width: 100%;
+                padding-right: 0px;
+                line-height: 18px;
+                letter-spacing: 0.75px;
+                &--bboy {
+                    max-width: 570px;
+                    width: 70%;
+                    padding-bottom: 66px;
+                }
+            }
+        }
+        .fboy_320 {
+            align-self: center;
+            position: absolute;
+            z-index: 2;
+            top: 80px;
+            left: 0;
+            right: 0;
+            margin: auto;
+            &--bboy {
+                top: 102px;
+            }
+        }
+    }  
+    .rev_320 .fotorama {
+        width: 100% !important; 
+    }
+    .rev_320 .fotorama__wrap {
+        display: flex;
+        flex-direction: column;
+        width: 100% !important;
+        height: 283px  !important;
+        background-color: #f5f4f9  ;
+    }
+    .rev_320 .fotorama__stage {
+        height: 260px !important;
+    }
+    .rev_320 .fotorama__arr {
+         display: none !important; 
+    }
+    .rev_320 .fotorama__nav__frame .fotorama__dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        border: none;
+        background-color: #d8d8d8;
+    }
+    .rev_320 .fotorama__nav__frame.fotorama__active .fotorama__dot{
+        background-color: #5c3caf;
+    }
+    .fotorama__nav {
+        padding-bottom: 20px
+    }
+} 
